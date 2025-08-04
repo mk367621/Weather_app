@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-container">
+    <form id="form" class="search-bar">
+      <input type="text" placeholder="Enter city..." id="city-input" required />
+      <button type="submit">Search</button>
+    </form>
+    <div id="weather" style="display:none;">
+      <div class="weather-main">
+        <img id="icon" class="weather-icon" src="" alt="" />
+        <div id="temp" style="font-size:2.2rem;font-weight:600;margin-bottom:0.25rem;"></div>
+        <div id="desc" class="conditions"></div>
+        <div id="city" style="font-size:1.1rem;color:#888;margin-top:0.2rem;"></div>
+      </div>
+      <div class="weather-grid">
+        <div>
+          <span>Humidity</span>
+          <span id="humidity"></span>
+        </div>
+        <div>
+          <span>Wind</span>
+          <span id="wind"></span>
+        </div>
+        <div>
+          <span>Min</span>
+          <span id="min"></span>
+        </div>
+        <div>
+          <span>Max</span>
+          <span id="max"></span>
+        </div>
+      </div>
+    </div>
+    <div id="message" style="color:#b90a0a;font-size:1rem;margin-top:1rem;display:none;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
